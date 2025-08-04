@@ -5,10 +5,10 @@
     "description": "Documentation API",
     "version": "1.0.0"
   },
-  "host": "https://library-ten-psi.vercel.app",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/api/books": {
