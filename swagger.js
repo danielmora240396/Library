@@ -5,7 +5,7 @@ const doc = {
         title: 'Library APIs',
         description: 'Documentation API',
     },
-    host: 'localhost:3000',
+    host: 'https://library-ten-psi.vercel.app/',
     schemes: ['http']
 }
 
