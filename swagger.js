@@ -6,7 +6,7 @@ const doc = {
         description: 'Documentation API',
     },
     host: 'https://library-ten-psi.vercel.app',
-    schemes: ['http']
+    schemes: ['https']
 }
 
 const outputFile = './swagger_output.json';

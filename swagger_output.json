@@ -8,7 +8,7 @@
   "host": "https://library-ten-psi.vercel.app",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api/books": {
