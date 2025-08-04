@@ -1,11 +1,11 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "1.0.0",
-    "title": "REST API",
-    "description": ""
+    "title": "Library APIs",
+    "description": "Documentation API",
+    "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "https://library-ten-psi.vercel.app",
   "basePath": "/",
   "schemes": [
     "http"

@@ -5,13 +5,13 @@ const doc = {
         title: 'Library APIs',
         description: 'Documentation API',
     },
-    host: 'https://library-ten-psi.vercel.app/',
+    host: 'https://library-ten-psi.vercel.app',
     schemes: ['http']
 }
 
 const outputFile = './swagger_output.json';
 const endpointsFiles = ['index.js'];
 
-swaggerAutogen(outputFile, endpointsFiles).then(() => {
+swaggerAutogen(outputFile, endpointsFiles, doc).then(() => {
     require('./index');
 })
