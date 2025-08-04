@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const bodyParser = require('body-parser');
+const helmet = require('helmet');
 
 const swaggerUi = require('swagger-ui-express');
 const swaggerFile = require('./swagger_output.json');
@@ -11,6 +12,13 @@ const books = require('./data/books');
 const urlEncoderParser = bodyParser.urlencoded({ extended: false });
 
 const jsonParser = bodyParser.json();
+
+const cspDefaults = helmet.contentSecurityPolicy.getDefaultDirectives();
+delete cspDefaults['upgrade-insecure-requests'];
+
+app.use(helmet({
+    contentSecurityPolicy: { directives: cspDefaults }
+}));
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
