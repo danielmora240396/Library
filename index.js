@@ -14,6 +14,8 @@ const jsonParser = bodyParser.json();
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(openapiSpecification.openapiSpecification));
 
+app.use('/api-docs', express.static(require('path').join(__dirname, 'node_modules/swagger-ui-dist')));
+
 app.get('/swagger.json', (req, res) => {
     console.log(openapiSpecification)
   res.json(openapiSpecification);

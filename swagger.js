@@ -6,9 +6,9 @@ const options = {
       // Correct version specification (OpenAPI 3.0.0)
       opeanpi: '3.0.0',
       info: {
-        title: 'Example API',
+        title: 'Library API Project',
         version: '1.0.0',
-        description: 'A sample API with Swagger documentation',
+        description: 'This is a backend project to mantain a library inventory | Daniel Mora',
       },
       servers: [{ url: 'http://localhost:3000' }],
 
