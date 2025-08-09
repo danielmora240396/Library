@@ -114,4 +114,6 @@ app.get('/api/books/category/:name', (req, res) => {
 
 app.listen(port, () => {
     console.log('Example of an app listeing in port...', port);
-})
+});
+
+module.exports = app;
